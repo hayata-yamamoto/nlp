@@ -4,7 +4,7 @@ I transferred and modified the below link into python regex.
 - https://app.quesbook.com/act/study/list-of-discourse-markers
 
 """
-patters = {
+patterns = {
     'addition': [
         'above all',
         'additionally',
