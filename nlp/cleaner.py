@@ -27,7 +27,7 @@ class Cleaner:
 
     def lower(self, token: str) -> str:
         """
-        文字列を大文字、小文字に切り替えるメソッド
+        string to lower case
         Args:
             token (str) : 文字列
 
@@ -40,7 +40,7 @@ class Cleaner:
 
     def half(self, token: str) -> str:
         """
-        文字列を半角か全角にするメソッド
+        string to half case
         Args:
             token (str) : 文字列
 
@@ -53,9 +53,9 @@ class Cleaner:
 
     def replace_numbers(self, token: str) -> str:
         """
-        0-9の数字を、一つの数字に統一する
+
         Args:
-            token (str) : 文字列
+            token (str) :
 
         Returns:
             str
@@ -64,9 +64,9 @@ class Cleaner:
 
     def replace_symbol(self, token: str) -> str:
         """
-        記号を統一表記に変更する
+
         Args:
-            token (str) : 文字列
+            token (str) :
 
         Returns:
             str
