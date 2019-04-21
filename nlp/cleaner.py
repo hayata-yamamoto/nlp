@@ -1,11 +1,14 @@
-import re
 import mojimoji
+import re
+from typing import List, Optional
+
+from nltk import corpus
 
 
 class Cleaner:
     def __init__(
             self,
-            stopwords: list = None,
+            stopwords: Optional[List[str]] = None,
             number_to: str = '0',
             symbol_to: str = '0',
             lower_string: bool = True,
@@ -19,7 +22,11 @@ class Cleaner:
             lower_string (bool) : 大文字、小文字の選択
             half_string (bool) : 半角全角の選択
         """
-        self.stopwords = stopwords
+        if stopwords is None:
+            self.stopwords = corpus.stopwords
+        else:
+            self.stopwords = stopwords
+
         self.symbol_to = symbol_to
         self.number_to = number_to
         self.lower_string = lower_string

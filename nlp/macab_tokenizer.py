@@ -2,7 +2,7 @@ import MeCab
 from typing import Union
 
 
-class Tokenizer:
+class MecabTokenizer:
     """
     This module is parsing sentence to several tokens.
     For example,
